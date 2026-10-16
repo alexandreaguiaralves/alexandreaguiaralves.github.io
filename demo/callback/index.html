@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Callback OAuth — Demo TikTok</title>
+    <link rel="stylesheet" href="../assets/demo.css" />
+  </head>
+  <body class="demo-body demo-callback">
+    <div class="demo-wrap">
+      <header class="demo-header">
+        <div>
+          <span class="demo-badge">Sandbox</span>
+          <a href="/demo/">Demo TikTok</a>
+        </div>
+        <nav class="demo-legal" aria-label="Legal">
+          <a href="/privacy-policy/">Política de Privacidade</a>
+          <a href="/terms-of-service/">Termos de Uso</a>
+        </nav>
+      </header>
+
+      <section class="demo-panel">
+        <h1>Login concluído — carregando APIs</h1>
+        <p class="demo-muted">
+          URL de callback:
+          <code>https://alexandreaguiaralves.github.io/demo/callback/</code>
+        </p>
+        <div id="demo-status" class="demo-status demo-status-info">Processando…</div>
+        <div class="demo-actions">
+          <a class="demo-btn demo-btn-secondary" href="/demo/">Voltar à demo</a>
+        </div>
+      </section>
+
+      <section id="profile-panel" class="demo-panel demo-hidden">
+        <h2>Display API — Perfil do usuário</h2>
+        <div class="demo-profile">
+          <img id="profile-avatar" class="demo-avatar" alt="" width="88" height="88" />
+          <div>
+            <h3 id="profile-name" style="margin: 0 0 0.25rem">—</h3>
+            <p id="profile-username" class="demo-muted" style="margin: 0">—</p>
+            <p id="profile-open-id" class="demo-muted" style="margin: 0.35rem 0 0; font-size: 0.85rem"></p>
+          </div>
+        </div>
+        <div id="profile-stats" class="demo-stats"></div>
+      </section>
+
+      <section id="videos-panel" class="demo-panel demo-hidden">
+        <h2>Display API — Vídeos (scope video.list)</h2>
+        <table class="demo-table">
+          <thead>
+            <tr>
+              <th>Título / descrição</th>
+              <th>ID</th>
+              <th>Criado em</th>
+            </tr>
+          </thead>
+          <tbody id="video-rows"></tbody>
+        </table>
+      </section>
+    </div>
+    <script src="../assets/demo.js"></script>
+  </body>
+</html>

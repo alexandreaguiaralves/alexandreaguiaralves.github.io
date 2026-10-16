@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Demo TikTok — Login Kit &amp; Display API</title>
+    <link rel="stylesheet" href="assets/demo.css" />
+  </head>
+  <body class="demo-body">
+    <div class="demo-wrap">
+      <header class="demo-header">
+        <div>
+          <span class="demo-badge">Sandbox</span>
+          <a href="/">alexandreaguiaralves.github.io</a>
+        </div>
+        <nav class="demo-legal" aria-label="Legal">
+          <a href="/privacy-policy/">Política de Privacidade</a>
+          <a href="/terms-of-service/">Termos de Uso</a>
+        </nav>
+      </header>
+
+      <section class="demo-panel">
+        <h1>Integração TikTok for Developers</h1>
+        <p class="demo-muted">
+          Demonstração web do fluxo ponta a ponta: <strong>Login Kit</strong> (OAuth),
+          troca de código por token e <strong>Display API</strong> (perfil e lista de vídeos).
+          Use o app em <strong>Sandbox</strong> no portal e uma conta <strong>target user</strong>.
+        </p>
+        <p class="demo-muted">
+          Redirect URI registrada:
+          <code>https://alexandreaguiaralves.github.io/demo/callback/</code>
+        </p>
+      </section>
+
+      <section class="demo-panel">
+        <h2>Configuração (uma vez)</h2>
+        <form id="demo-setup-form">
+          <label class="demo-label" for="client-key">Client Key (Sandbox)</label>
+          <input
+            class="demo-input"
+            id="client-key"
+            name="clientKey"
+            autocomplete="off"
+            placeholder="Ex.: sbawxxxxxxxx"
+          />
+
+          <label class="demo-label" for="proxy-url">URL do proxy OAuth (Cloudflare Worker)</label>
+          <input
+            class="demo-input"
+            id="proxy-url"
+            name="proxyUrl"
+            autocomplete="off"
+            placeholder="https://tiktok-demo-oauth.seu-subdominio.workers.dev"
+          />
+
+          <label class="demo-label" for="scopes">Scopes (iguais ao app no portal)</label>
+          <textarea class="demo-textarea" id="scopes" name="scopes"></textarea>
+
+          <div class="demo-actions">
+            <button class="demo-btn demo-btn-secondary" type="submit">Salvar configuração</button>
+            <button class="demo-btn demo-btn-tiktok" type="button" id="login-btn">
+              Entrar com TikTok
+            </button>
+          </div>
+        </form>
+        <div id="demo-status" class="demo-status demo-hidden" role="status"></div>
+      </section>
+
+      <section class="demo-panel">
+        <h2>Roteiro sugerido para o vídeo (.mp4 / .mov)</h2>
+        <ol class="demo-steps">
+          <li>Abrir <code>https://alexandreaguiaralves.github.io/</code> e mostrar links de Privacidade e Termos.</li>
+          <li>Entrar em <code>/demo/</code> (esta página) — domínio visível na barra de endereço.</li>
+          <li>Clicar <strong>Entrar com TikTok</strong> → login/consentimento na sandbox.</li>
+          <li>Na volta, mostrar perfil e tabela de vídeos carregados via API.</li>
+          <li>Mencionar scopes usados (Login Kit + Display API). Remova produtos/scopes não usados no portal antes do review.</li>
+        </ol>
+        <p class="demo-muted">
+          Detalhes do proxy:
+          <a href="https://github.com/alexandreaguiaralves/alexandreaguiaralves.github.io/blob/master/demo/README.md"
+            >demo/README.md</a
+          >
+          no GitHub.
+        </p>
+      </section>
+    </div>
+    <script src="assets/demo.js"></script>
+  </body>
+</html>
