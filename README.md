@@ -5,8 +5,8 @@ Site estático (GitHub Pages) com página inicial, Política de Privacidade e Te
 ## URLs publicadas
 
 - Site: https://alexandreaguiaralves.github.io/
-- Política de Privacidade: https://alexandreaguiaralves.github.io/privacy-policy.html
-- Termos de Uso: https://alexandreaguiaralves.github.io/terms-of-service.html
+- Política de Privacidade: https://alexandreaguiaralves.github.io/privacy-policy/
+- Termos de Uso: https://alexandreaguiaralves.github.io/terms-of-service/
 - Verificação TikTok: https://alexandreaguiaralves.github.io/tiktokRAOFNMdE4YhzlZSPQSMqtkFrONCJLhjE.txt
 
 ## TikTok Developer Portal
